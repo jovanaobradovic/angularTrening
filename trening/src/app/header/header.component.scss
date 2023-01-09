@@ -1,0 +1,31 @@
+header{
+    background: #ffc0cb;
+    padding: 0;
+    border-bottom: 1px solid #faafc2;
+}
+
+a{
+    color: #d7456a;
+}
+
+.container{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.logo{
+    font-weight: bold;
+    padding: 1em;   //uzima onih 18 iz body
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li a{
+    padding: 1em;
+    display: inline-block;
+}
+

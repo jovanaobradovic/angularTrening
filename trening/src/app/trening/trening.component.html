@@ -1,0 +1,25 @@
+
+
+<div class="card">
+    <img
+      [src]="trening.image"
+      alt="vezba"
+      width="90%"
+      height="90%"
+      class="image"
+    />
+    <h1> {{trening.naziv_vezbe}}</h1>
+    <p class="trajanje" appRedEl>{{trening.trajanje}} min</p>
+    <p class="opis">{{trening.opis}}</p>
+    <p>
+      <span appBlueEl>Tezina: {{trening.tezina}}</span>
+      <button
+      [ngClass]="{ classButtonClick: buttonClick == true}"
+      (click)="onDodajTrening()"
+    >
+      Dodaj u trenig
+    </button>
+    
+    
+    </p>
+  </div>

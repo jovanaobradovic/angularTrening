@@ -1,0 +1,17 @@
+
+
+<div class="card" *ngFor="let t of mojiTreninzi">
+    <img width="80px" [src]="t.image"> {{t.naziv_vezbe}} {{t.ukupnoTrajanje}}
+    <button
+  
+(click)="onIzbrisiTrenig(t)"
+
+>
+Izbrisi iz treninga
+</button>
+
+</div>
+
+<span>Ukupno trajanje: {{ukupnoTrajanje}} min</span>
+
+
