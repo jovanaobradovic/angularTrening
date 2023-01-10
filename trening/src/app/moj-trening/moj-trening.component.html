@@ -1,7 +1,24 @@
 
+ 
+      
+      
+      
+
 
 <div class="card" *ngFor="let t of mojiTreninzi">
-    <img width="80px" [src]="t.image"> {{t.naziv_vezbe}} {{t.ukupnoTrajanje}}
+
+    <h1 class="naslov"> {{t.naziv_vezbe}}</h1>
+    <img class="image" [src]="t.image"> 
+    Trajanje: {{t.ukupnoTrajanje}}
+    <p class="tezina">Težina: 
+        <span id="secondTezina"> {{t.tezina}}</span></p>
+
+
+        <p class="opis">{{t.opis}}</p>
+        <p class="trajanje" appRedEl id="firstText">Trajanje serije vežbi:  <span id="secondText"> {{t.trajanje}} min</span></p>
+  
+
+    
     <button
   
 (click)="onIzbrisiTrenig(t)"
@@ -12,6 +29,6 @@ Izbrisi iz treninga
 
 </div>
 
-<span>Ukupno trajanje: {{ukupnoTrajanje}} min</span>
+<span style="text-align: center;">Ukupno trajanje: {{ukupnoTrajanje}} min</span>
 
 

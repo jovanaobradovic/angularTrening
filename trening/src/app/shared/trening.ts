@@ -1,5 +1,5 @@
 export class Trening{
-     id: number;       //umesto konstruktora
+     id: number;     
      naziv_vezbe: string;
      trajanje: number;
      opis: string;

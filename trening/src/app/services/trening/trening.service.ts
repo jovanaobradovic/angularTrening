@@ -6,39 +6,86 @@ import { Trening } from 'src/app/shared/trening';
 })
 export class TreningService {
 mojiTreninzi: Trening[] = [];
+sviTreninzi :Trening [] =[
+  {
+    id: 1,
+    naziv_vezbe: 'Trbusnjaci 1.tip',
+    opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
+    image: '../../assets/images/abs.jpg',
+    trajanje: 10,
+    tezina: 'Lako',
+    ukupnoTrajanje: 0,
+  },
+  {
+    id: 2,
+    naziv_vezbe: 'Trbusnjaci 2.tip',
+    opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
+    image: '../../assets/images/abs.jpg',
+    trajanje: 19,
+    tezina: 'Srednje',
+    ukupnoTrajanje: 0,
+  },
+  {
+    id: 3,
+    naziv_vezbe: 'Ruke bez tegova',
+    opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
+    image: '../../assets/images/abs.jpg',
+    trajanje: 8,
+    tezina: 'Lako',
+    ukupnoTrajanje: 0,
+  },
+  {
+    id: 4,
+    naziv_vezbe: 'Ruke sa tegovima',
+    opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
+    image: '../../assets/images/abs.jpg',
+    trajanje: 5,
+    tezina: 'Srednje',
+    ukupnoTrajanje: 0,
+  },
+  {
+    id: 5,
+    naziv_vezbe: 'Čučnjevi',
+    opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
+    image: '../../assets/images/abs.jpg',
+    trajanje: 8,
+    tezina: 'Lako',
+    ukupnoTrajanje: 0,
+  },
+  {
+    id: 6,
+    naziv_vezbe: 'Čučnjevi sa trakama',
+    opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
+    image: '../../assets/images/abs.jpg',
+    trajanje: 8,
+    tezina: 'Teško',
+    ukupnoTrajanje: 0,
+  },
+  {
+    id: 7,
+    naziv_vezbe: 'Noge na podu',
+    opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
+    image: '../../assets/images/abs.jpg',
+    trajanje: 10,
+    tezina: 'Lako',
+    ukupnoTrajanje: 0,
+  },
+  {
+    id: 6,
+    naziv_vezbe: 'Noge u stajaćem položaju',
+    opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
+    image: '../../assets/images/abs.jpg',
+    trajanje: 8,
+    tezina: 'Teško',
+    ukupnoTrajanje: 0,
+  },
+];
 
   constructor() { }
 
+ 
   getAll(): Trening[]{
-    return[
-      {
-        id: 1,
-        naziv_vezbe: 'Trbusnjaci',
-        opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
-        image: '../../assets/images/abs.jpg',
-        trajanje: 10,
-        tezina: 'Lako',
-        ukupnoTrajanje: 0,
-      },
-      {
-        id: 2,
-        naziv_vezbe: 'Ruke',
-        opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
-        image: '../../assets/images/abs.jpg',
-        trajanje: 8,
-        tezina: 'Srednje',
-        ukupnoTrajanje: 0,
-      },
-      {
-        id: 3,
-        naziv_vezbe: 'Noge',
-        opis: 'Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis Neki opis ',
-        image: '../../assets/images/abs.jpg',
-        trajanje: 8,
-        tezina: 'Tesko',
-        ukupnoTrajanje: 0,
-      },
-    ]
+    return this.sviTreninzi;
   }
 
 dodajTrening(trening: Trening){

@@ -22,7 +22,8 @@ export class HomeComponent implements OnInit{
 
   pretrazi(){
     this.treninzi = this.treningServive.getAll();
-    if(this.search!="")this.treninzi = this.treninzi.filter((t) => t.naziv_vezbe.toLowerCase() == this.search.toLowerCase());
+   // if(this.search!="")this.treninzi = this.treninzi.filter((t) => t.naziv_vezbe.toLowerCase() == this.search.toLowerCase());
+   if(this.search!="")this.treninzi = this.treninzi.filter((t) => t.naziv_vezbe.toLowerCase().includes(this.search.toLowerCase()) );
     if(this.tezina!="")this.treninzi = this.treninzi.filter((t) => t.tezina == this.tezina);
 
  

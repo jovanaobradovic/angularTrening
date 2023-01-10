@@ -1,25 +1,32 @@
 
 
 <div class="card">
+ 
+  <p class="tezina">Težina: 
+  <span id="secondTezina"> {{trening.tezina}}</span></p>
+
+
+    <a [routerLink]="['/opis']" [queryParams]=
+    "{naziv_vezbe:trening.naziv_vezbe}">
     <img
       [src]="trening.image"
       alt="vezba"
       width="90%"
       height="90%"
       class="image"
-    />
-    <h1> {{trening.naziv_vezbe}}</h1>
-    <p class="trajanje" appRedEl>{{trening.trajanje}} min</p>
+    /></a>
+    <h1 class="naslov"> {{trening.naziv_vezbe}}</h1>
+    
     <p class="opis">{{trening.opis}}</p>
+    <p class="trajanje" appRedEl id="firstText">Trajanje serije vežbi:  <span id="secondText"> {{trening.trajanje}} min</span></p>
     <p>
-      <span appBlueEl>Tezina: {{trening.tezina}}</span>
       <button
       [ngClass]="{ classButtonClick: buttonClick == true}"
       (click)="onDodajTrening()"
     >
       Dodaj u trenig
     </button>
-    
+ 
     
     </p>
   </div>

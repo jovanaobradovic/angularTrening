@@ -11,8 +11,6 @@ export class TreningComponent {
 @Input() trening: Trening;
 
 
-//@Output() treningAdded = new EventEmitter<number>();
-
 constructor(private treningServise: TreningService){
   
 }

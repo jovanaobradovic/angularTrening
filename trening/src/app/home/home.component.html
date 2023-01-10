@@ -3,23 +3,23 @@
     <h1 class="display-2 text-center">{{ heading }}</h1>
   </div>
   
-<div class="pretraga">
-  <p>Pretrazi vezbe:</p>
-  <input type="text" [(ngModel)]="search" />
-  <input type="radio" [(ngModel)]="tezina" name="tezina" value="Lako"/>Lako
-  <input type="radio" [(ngModel)]="tezina" name="tezina" value="Srednje"/>Srednje
-  <input type="radio" [(ngModel)]="tezina" name="tezina" value="Tesko"/>Tesko<br>
-  <button (click)="pretrazi()">Pretrazi </button>
-  <button (click)="ponistiFilter()">Ponisti </button>
-
-
-</div>
-
-<div class="container">
-      <app-trening
-      *ngFor="let t of treninzi"
-      [trening]="t"
-      class="trening"
-    ></app-trening>
-   
-</div>
+  <div class="pretraga" >
+    Pretraži vežbe
+    <input type="text" [(ngModel)]="search" />
+    <input type="radio" [(ngModel)]="tezina" name="tezina" value="Lako"/>Lako
+    <input type="radio" [(ngModel)]="tezina" name="tezina" value="Srednje"/>Srednje
+    <input type="radio" [(ngModel)]="tezina" name="tezina" value="Tesko"/>Teško<br>
+    <button (click)="pretrazi()">Pretraži </button>
+    <button (click)="ponistiFilter()">Poništi </button>
+  
+  
+  </div>
+  
+  <div class="container">
+        <app-trening
+        *ngFor="let t of treninzi"
+        [trening]="t"
+        class="trening"
+      ></app-trening>
+     
+  </div>

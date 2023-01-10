@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { TreningComponent } from './trening/trening.component';
 import { FormsModule } from '@angular/forms';
 import { MojTreningComponent } from './moj-trening/moj-trening.component';
+import { OpisVezbeComponent } from './opis-vezbe/opis-vezbe.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { MojTreningComponent } from './moj-trening/moj-trening.component';
     HeaderComponent,
     TreningComponent,
     MojTreningComponent,
+    OpisVezbeComponent,
+    KontaktComponent,
+    
 
   ],
   imports: [
