@@ -1,34 +1,28 @@
-
- 
-      
-      
-      
-
-
 <div class="card" *ngFor="let t of mojiTreninzi">
+    <div class="course">
+		<div class="course-preview">
+			<img class="image" [src]="t.image">
+		</div>
+		<div class="course-info">
+			<div class="progress-container">
 
-    <h1 class="naslov"> {{t.naziv_vezbe}}</h1>
-    <img class="image" [src]="t.image"> 
-    Trajanje: {{t.ukupnoTrajanje}}
-    <p class="tezina">Težina: 
-        <span id="secondTezina"> {{t.tezina}}</span></p>
+				<div class="tezina"></div>
 
-
-        <p class="opis">{{t.opis}}</p>
-        <p class="trajanje" appRedEl id="firstText">Trajanje serije vežbi:  <span id="secondText"> {{t.trajanje}} min</span></p>
-  
-
-    
-    <button
-  
-(click)="onIzbrisiTrenig(t)"
-
->
-Izbrisi iz treninga
-</button>
+                Težina: 
+        <span> {{t.tezina}}</span>
+	
+			</div>
+			<h1 class="naslov"> {{t.naziv_vezbe}}</h1>
+            <p class="trajanje" appRedEl id="firstText">Trajanje serije vežbi:  <span id="secondText"> {{t.trajanje}} min</span></p>
+            <p class="opis">{{t.opis}}</p>
+            
+			<button class="btn" (click)="onIzbrisiTrenig(t)">
+    Izbrisi iz treninga
+            </button>
+		</div>
+	</div>
 
 </div>
 
-<span style="text-align: center;">Ukupno trajanje: {{ukupnoTrajanje}} min</span>
-
-
+<span style="text-align: center;" id="ukupno">Ukupno trajanje: {{ukupnoTrajanje}} min</span>
+<span style="text-align: center;" id="datum">Datum: {{mojDatum | date}} god</span>

@@ -1,69 +1,106 @@
-.card {
-    max-width: 100%;
-    height: 250px;
-    margin: 3%;
+* {
+	box-sizing: border-box;
+}
 
-    column-count: 2;
 
-    text-align: center;
-    font-family: arial;
-    border-radius: 30px;
-    background: linear-gradient(120deg, #ffffff, #e6e6e6);
-    box-shadow: 10px 10px 20px #b8b7b7, -10px -10px 20px #ffffff;
-  }
+body {
+	background-image: linear-gradient(45deg, #7175da, #9790F2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
 
-  .card h1{
-    display: inline-block;
-    position: relative;
-    font-size: 30px;
-    color: #344055;
-    padding-top: 2%;
-    
-  }
 
-  .tezina {
-      text-align: center;
-      font-size: 18px;
-      color: #7d7d7d;
-      
-    }
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 90%;
+	margin: 20px;
+	overflow: hidden;
 
-  .image {
-    
-    justify-content: left;
-    max-width: 300px;
-    
-    border-radius: 20px;
-     
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+	
+}
 
-    float: left;
-  
-   display: inline-block;
 
-   // align-items: flex-end;
-  }
+.course-preview {
+	background-color: #d7456a;
+	color: #fff;
+	padding: 30px;
+	max-width: 30%;
+}
 
-  .card button {
+.course naslov {
+	margin: 10px;
+}
 
-    display: inline-block;
-    outline: none;
-    cursor: pointer;
-    font-size: 18px;
-    //line-height: 8;
-    border-radius: 500px;
-    border-color: #d7456a;
-         
-    margin-bottom: 4%;
- 
-   min-width: 160px;
-    text-transform: uppercase;
-    text-align: center;
-   padding: 12px 20px;
-    color: #fff;
-    background-color: #d7456a;
-    height: 48px;
+.naslov{
+  margin-block-start: 0;
+}
 
-  }
+.image{
+  max-width: 80%;
+  margin-left: 5%;
+}
+
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.progress-container {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-align: right;
+	width: 150px;
+  color: #d7456a;
+}
+
+
+
+
+.btn {
+	background-color: #d7456a;
+	border: 0;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 18px;
+	padding: 12px 25px;
+	position: absolute;
+
+  margin-block-start: 20%;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+
+#ukupno{
+  color: #d7456a;
+  font-weight: bold;
+  font-size: 30px;
+  float: right;
+  margin: 30px;
+  margin-right: 8%;
+}
+
+#datum{
+  color: #d7456a;
+  font-weight: bold;
+  font-size: 30px;
+  float: left;
+  margin: 30px;
+  margin-left: 8%;
+}

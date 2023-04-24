@@ -1,0 +1,44 @@
+#btn{
+          font-size: 14px;
+          border-radius: 500px;
+          border-color: #d7456a;
+          
+          float: right;
+
+          margin: 4%;
+       
+          min-width: 100px;
+          text-transform: uppercase;
+          text-align: center;
+          padding: 8px 18px;
+          color: #fff;
+          background-color: #d7456a;
+         
+}
+
+.card{
+    max-width: 80%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: left;
+    font-family: montserrat;
+    background-color: pink;
+    box-shadow: 5px 5px  #dad7d7;
+    
+    column-count: 2;  
+}
+
+
+.image{
+    max-width: 90%; 
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 8%;
+}
+
+.tekst{
+    padding-top: 5%;
+    padding-right: 10%;
+}

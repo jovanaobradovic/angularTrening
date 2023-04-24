@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { MojTreningComponent } from './moj-trening/moj-trening.component';
 import { OpisVezbeComponent } from './opis-vezbe/opis-vezbe.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import { ShortenPipe } from './shorten.pipe';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { KontaktComponent } from './kontakt/kontakt.component';
     MojTreningComponent,
     OpisVezbeComponent,
     KontaktComponent,
+    ShortenPipe,
     
 
   ],

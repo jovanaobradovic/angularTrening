@@ -10,6 +10,10 @@ import { Trening } from '../shared/trening';
 export class MojTreningComponent {
 mojiTreninzi: Trening[];
 ukupnoTrajanje: number = 0;
+mojDatum = Date.now();
+
+
+novaVezba = new Trening();
 
 constructor(private treningService:TreningService){
 
@@ -32,5 +36,6 @@ constructor(private treningService:TreningService){
       this.ukupnoTrajanje += tr.ukupnoTrajanje;
     })
   }
+
 
 }

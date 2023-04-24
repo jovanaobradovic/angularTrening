@@ -1,17 +1,20 @@
 
 <div>
-    <h1 class="display-2 text-center">{{ heading }}</h1>
+    <h1 class="naslov">{{ heading }}</h1>
   </div>
   
   <div class="pretraga" >
-    Pretraži vežbe
-    <input type="text" [(ngModel)]="search" />
+    Pretraži vežbe:
+    <input type="text" class="poljePretraga" [(ngModel)]="search" />
     <input type="radio" [(ngModel)]="tezina" name="tezina" value="Lako"/>Lako
     <input type="radio" [(ngModel)]="tezina" name="tezina" value="Srednje"/>Srednje
-    <input type="radio" [(ngModel)]="tezina" name="tezina" value="Tesko"/>Teško<br>
-    <button (click)="pretrazi()">Pretraži </button>
-    <button (click)="ponistiFilter()">Poništi </button>
-  
+    <input type="radio" [(ngModel)]="tezina" name="tezina" value="Teško"/>Teško
+    <button class="btn1" (click)="sortiraj_A_Z()">Sortiraj (A-Z)</button>
+    <button class="btn1" (click)="sortiraj_Z_A()">Sortiraj (Z-A)</button>
+    <br>
+    <button class="btn" (click)="pretrazi()">Pretraži </button>
+    <button class="btn" (click)="ponistiFilter()">Poništi </button>
+    
   
   </div>
   

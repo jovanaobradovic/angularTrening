@@ -28,20 +28,20 @@ a:hover {
 a.logo{
     font-weight: bold;
     padding: 1em;   //uzima onih 18 iz body
+    padding-top: 10px;
 }
 
 
 nav ul{
     list-style-type: none;
     margin: 0;
-   justify-content: space-between;
     padding-top: 1em;
 
 }
 
 nav ul li{
     display: inline-block;
-    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .success {

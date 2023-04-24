@@ -17,7 +17,7 @@
     /></a>
     <h1 class="naslov"> {{trening.naziv_vezbe}}</h1>
     
-    <p class="opis">{{trening.opis}}</p>
+    <p class="opis">{{trening.opis | shorten}}</p>
     <p class="trajanje" appRedEl id="firstText">Trajanje serije vežbi:  <span id="secondText"> {{trening.trajanje}} min</span></p>
     <p>
       <button
