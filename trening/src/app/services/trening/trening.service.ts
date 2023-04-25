@@ -81,6 +81,8 @@ sviTreninzi :Trening [] =[
   },
 ];
 
+poslednjiId = 8;
+
   constructor() { }
 
  
@@ -96,8 +98,6 @@ dodajTrening(trening: Trening){
   }
   trening.ukupnoTrajanje += trening.trajanje;
   alert(trening.naziv_vezbe + " trening uspesno dodat");
- 
-
 
 }
 
@@ -112,6 +112,11 @@ ukloniTrening(trening: Trening){
 
 }
 
+
+dodajNoviTrening(trening: Trening) {
+  trening.id = ++this.poslednjiId;
+  this.sviTreninzi.push(trening);
+}
 
 
 }

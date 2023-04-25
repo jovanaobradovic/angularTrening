@@ -1,28 +1,33 @@
-<div class="card" *ngFor="let t of mojiTreninzi">
-    <div class="course">
-		<div class="course-preview">
-			<img class="image" [src]="t.image">
-		</div>
-		<div class="course-info">
-			<div class="progress-container">
-
-				<div class="tezina"></div>
-
-                Težina: 
-        <span> {{t.tezina}}</span>
-	
+<h1>Ovo je moj trening</h1>
+<div class="page-content">
+	<div class="card" *ngFor="let t of mojiTreninzi">
+		<div class="course">
+			<div class="course-preview">
+				<img class="image" [src]="t.image">
 			</div>
-			<h1 class="naslov"> {{t.naziv_vezbe}}</h1>
-            <p class="trajanje" appRedEl id="firstText">Trajanje serije vežbi:  <span id="secondText"> {{t.trajanje}} min</span></p>
-            <p class="opis">{{t.opis}}</p>
-            
-			<button class="btn" (click)="onIzbrisiTrenig(t)">
-    Izbrisi iz treninga
-            </button>
+			<div class="course-info">
+				<div class="progress-container">
+	
+					<div class="tezina"></div>
+	
+					Težina: 
+			<span> {{t.tezina}}</span>
+		
+				</div>
+				<h1 class="naslov"> {{t.naziv_vezbe}}</h1>
+				<p class="trajanje" appRedEl id="firstText">Trajanje serije vežbi:  <span id="secondText"> {{t.trajanje}} min</span></p>
+				<p class="opis">{{t.opis}}</p>
+				
+				<button class="btn" (click)="onIzbrisiTrenig(t)">
+		Izbrisi iz treninga
+				</button>
+			</div>
 		</div>
+	
 	</div>
+	
+	<span style="text-align: center;" id="ukupno">Ukupno trajanje: {{ukupnoTrajanje}} min</span>
+	<span style="text-align: center;" id="datum">Datum: {{mojDatum | date}} god</span>
+	
 
 </div>
-
-<span style="text-align: center;" id="ukupno">Ukupno trajanje: {{ukupnoTrajanje}} min</span>
-<span style="text-align: center;" id="datum">Datum: {{mojDatum | date}} god</span>

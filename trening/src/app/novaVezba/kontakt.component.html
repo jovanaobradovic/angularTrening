@@ -1,0 +1,42 @@
+
+
+<form #formaTrening="ngForm" (ngSubmit)="dodajNoviTrening(formaTrening)">
+
+  <h2>Dodaj novu vežbu</h2>
+  <div>
+    <label>Naziv vezbe:</label>
+    <input type="text" name="naziv_vezbe" [(ngModel)]="noviTrening.naziv_vezbe" required>
+  </div>
+
+  <div>
+    <label>Opis:</label>
+    <input type="text" name="opis" [(ngModel)]="noviTrening.opis" required>
+  </div>
+
+  <div>
+    <label>Link slike:</label>
+    <input type="text" name="image" [(ngModel)]="noviTrening.image">
+  </div>
+  <div *ngIf="noviTrening.image">
+    <img [src]="noviTrening.image" alt="Slika vezbe">
+  </div>
+
+  <div>
+    <label>Trajanje:</label>
+    <input type="number" name="trajanje" [(ngModel)]="noviTrening.trajanje" required>
+    <label>min</label>
+  </div>
+  
+  <div>
+    <label>Tezina:</label>
+    <select name="tezine" id="tezina" [(ngModel)]="noviTrening.tezina">
+      <option value="Lako">Lako</option>
+      <option value="Srednje">Srednje</option>
+      <option value="Teško">Teško</option>
+  </select>
+  </div>
+      
+  
+  
+  <button type="submit" class="btn" [disabled]="!formaTrening.valid || !noviTrening.naziv_vezbe || noviTrening.trajanje <= 0 || !noviTrening.tezina">Dodaj novu vežbu</button>
+</form>

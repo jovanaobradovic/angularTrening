@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -9,8 +8,9 @@ import { TreningComponent } from './trening/trening.component';
 import { FormsModule } from '@angular/forms';
 import { MojTreningComponent } from './moj-trening/moj-trening.component';
 import { OpisVezbeComponent } from './opis-vezbe/opis-vezbe.component';
-import { KontaktComponent } from './kontakt/kontakt.component';
+import { KontaktComponent } from './novaVezba/kontakt.component';
 import { ShortenPipe } from './shorten.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -23,8 +23,7 @@ import { ShortenPipe } from './shorten.pipe';
     OpisVezbeComponent,
     KontaktComponent,
     ShortenPipe,
-    
-
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

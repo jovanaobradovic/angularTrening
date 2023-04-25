@@ -11,9 +11,7 @@ export class TreningComponent {
 @Input() trening: Trening;
 
 
-constructor(private treningServise: TreningService){
-  
-}
+constructor(private treningServise: TreningService){  }
 
 
 onDodajTrening(){
